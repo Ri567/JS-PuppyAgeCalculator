@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+<title> Puppy Age Calculator </title>
+</head> 
+
+<!--
+2.) The Puppy Age Calculator
+
+Create a webpage that will calculate the dog's age. (Human 1 yr old = Dog 15 yrs. old )
+Write a function named calculateDogAge that:
+takes 1 argument: your puppy's age.
+calculates your dog's age based on the conversion rate of 1 human year to 7 dog years.
+outputs the result to the screen like so: "Your doggie is NN years old in dog years!"
+Call the function three times with different sets of values.Bonus: Add an additional argument to the function that takes the conversion rate of human to dog years. -->
+
+<body>
+    <center>
+    <div class= "formstyle"> 
+    <h1 style="color:rgb(110, 49, 0);padding:13px;">
+    The Puppy Age Calculator
+    </h1>
+    <h3>
+    Calculate and know how old your puppy is!<br>
+    with the help of The Puppy Age Calculator!
+    </h3>
+    
+    <b>Enter how many Human Years
+    <br> your dog has been living:</b>
+    <br>
+    
+    <input type="number"
+    id="age"
+    name="age"
+    placeholder="Ex: 3 years"
+    class="inputfield"
+    min="1"
+    max="2^7"
+    value>
+    <br>
+    <br>
+    
+    <button id="button" onclick="calculateDogAge()">
+    Calculate your <br>puppy's age!
+    </button>
+    <br>
+    <br>
+    
+    <p id="ResultText">The Result is:<br>
+    <span id="result"></span></p>
+    
+    <script src="index.js"></script>
+    </div>
+    
+    </center>
+    </body>  
+</html>  
